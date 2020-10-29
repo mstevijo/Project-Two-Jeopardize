@@ -1,0 +1,145 @@
+input[type=text], input[type=password] {
+    width: 40%;
+    padding: 12px 20px;
+    display: block;
+    margin: auto;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  .btnclass{
+      text-align: center;
+  }
+  button {
+    background-color: rgb(52, 52, 206) !important;
+    color: yellow !important;
+    padding: 24px 35px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    /* width: 100%; */
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  .jeopardizeimg {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .container {
+    padding: 40px;;
+  }
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+
+.jumbotron {
+    background-color: rgb(52, 52, 206);
+    color: rgb(228, 243, 17);
+    text-align: center;
+};
+#categories {
+    background-color: rgb(38, 38, 235);
+};
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+};
+.onehundred {
+    flex: 1 1 auto;
+    min-height: 1px;
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: rgb(52, 52, 206);
+    color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    float: none;
+    padding: 25px;
+    text-align: center;
+    /* opacity: 0.8; */
+  }
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  body {
+      background-image: url('https://www.jeopardy.com/sites/default/files/styles/article_image_gallery/public/2018-09/2013%20-%20present.jpg?itok=qDLGiwyd');
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: yellow;
+  }
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  /* button {
+      text-align: center;
+      background-color: yellow;
+  } */
+  /* button:hover {
+    opacity: 0.8;
+  } */
+
+  .cluePannel {
+    background-color: blue;
+    color: white;
+  }
+
+  .col-sm-2 {
+    border: 3px solid black;
+    background-color: rgb(52, 52, 206);
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+  }
+
+  #q-btn {
+    color: yellow;
+    font-weight: bold;
+    font-size: 200%;
+  }
+  
+  .modal-content {
+    color: black;
+    text-align: left;
+  }
+  
+  .hide {
+    display: none;
+  }
+
+  h1 {
+    margin-top: 45px;
+    text-align: center;
+  }
+
+  p {
+    margin: auto;
+  }
+
+  #correct, #try-again {
+    text-align: center;
+  }

@@ -1,0 +1,57 @@
+<div class="card" style="width: 41rem;">
+    <img src="assets/logo.png" class="card-img-top" alt="logo">
+</div>
+<div class="btnclass">
+    <button class="btn btn-primary btn-lg reset-btn">Reset</button>
+    <button class="btn btn-primary btn-lg logout-btn">Log Out</button>
+</div>
+<div class="container">
+    <div id="categories" class="row">
+
+        {{#each category}}
+        <div class="col-sm-2">
+            <p>{{this}}</p>
+        </div>
+        {{/each}}
+
+    </div>
+    <div id="categories" class="row">
+        {{#each questions }}
+        <div class="col-sm-2">
+            <button type="button" id="q-btn" class="btn" data-toggle="modal" data-target="#modal-question">{{value}}</button>
+
+            <div class="modal fade" id="modal-question" data-backdrop="false" tabindex="-1" aria-labelledby="modalQuestionLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalQuestionLabel">{{category}}</h5>
+                            <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            {{question}}
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="answer1" placeholder="Answer">
+                                </div>
+                            </form>
+                            <div id="correct" class="hide">
+                                CORRECT!
+                            </div>
+                            <div id="try-again" class="hide">
+                                TRY AGAIN
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" id="answer1-100" class="btn btn-primary">Enter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+    <script type="text/javascript" src="/js/jeopardyBoard.js"></script>
